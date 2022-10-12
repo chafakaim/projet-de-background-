@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+    
+<div class="container">
+    <h1 class="logo">kaim chafi</h1>
+    <div class="mouse"></div>
+</div>
+<script>
+    let mouse=document.querySelector('.mouse');
+
+    window.addEventListener('mousemove',function(e){
+
+        mouse.style.left=e.pageX - mouse.offsetWidth/2 + 'px';
+        mouse.style.top=e.pageY - mouse.offsetHeight/2 + 'px';
+    })
+</script>
+</body>
+</html>
